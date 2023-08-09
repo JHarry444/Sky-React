@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Trainer from './components/Trainer';
+import Conditional from './components/Conditional';
+import ClassBased from './components/ClassBased';
 
 function App() {
+  const InnerComponent = () => <p>what up</p>;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <p>This is a paragraph</p>
+      <Trainer />
+      <InnerComponent />
+      {InnerComponent()}
+      <Conditional />
+      <ClassBased />
     </div>
   );
 }

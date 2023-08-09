@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App tests App matches snapshot 1`] = `
+<div
+  className="App"
+>
+  <h1>
+    LET'S LEARN REACT
+  </h1>
+  <p>
+    This is a paragraph
+  </p>
+  <div>
+    <p>
+      Name: 
+      JH
+    </p>
+    <p>
+      Age: 
+      29
+    </p>
+    <p>
+      Specialism: 
+      software
+    </p>
+  </div>
+  <p>
+    what up
+  </p>
+  <p>
+    what up
+  </p>
+  <p>
+    All good
+  </p>
+  <p>
+    OLD AND SAD!
+  </p>
+</div>
+`;
