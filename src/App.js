@@ -11,6 +11,8 @@ function App() {
     <div className='App'>
       <Header />
       <p>This is a paragraph</p>
+      <Trainer name="JH" age={29} specialism="weaponisation" />
+      {Trainer({ name: "JH", age: 29, specialism: "weaponisation" })}
       <Trainer />
       <InnerComponent />
       {InnerComponent()}

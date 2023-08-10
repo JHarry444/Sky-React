@@ -1,17 +1,25 @@
+import PropTypes from "prop-types";
 
-const Trainer = () => {
-    const me = {
-        name: "JH",
-        age: 29,
-        specialism: "software"
-    }
+// const Trainer = (props) => {
+//     return (
+//         <div>
+//             <p>Name: {props.name}</p>
+//             <p>Age: {props.age}</p>
+//             <p>Specialism: {props.specialism}</p>
+//             {
+//                 //<p>Date: {new Date().toString()}</p>
+//             }
+//         </div>
+//     )
 
+// }
 
+const Trainer = ({name, age, specialism}) => {
     return (
         <div>
-            <p>Name: {me.name}</p>
-            <p>Age: {me.age}</p>
-            <p>Specialism: {me.specialism}</p>
+            <p>Name: {name}</p>
+            <p>Age: {age}</p>
+            <p>Specialism: {specialism}</p>
             {
                 //<p>Date: {new Date().toString()}</p>
             }
@@ -20,4 +28,13 @@ const Trainer = () => {
 
 }
 
+Trainer.defaultProps = {
+    specialism: "Software"
+}
+
+Trainer.propTypes = {
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    specialism: PropTypes.string,
+}
 export default Trainer;
