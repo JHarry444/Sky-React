@@ -17,9 +17,9 @@ import PropTypes from "prop-types";
 const Trainer = ({name, age, specialism}) => {
     return (
         <div>
-            <p>Name: {name}</p>
-            <p>Age: {age}</p>
-            <p>Specialism: {specialism}</p>
+            <p>{`Name: ${name}`}</p>
+            <p>{`Age: ${age}`}</p>
+            <p>{`Specialism: ${specialism}`}</p>
             {
                 //<p>Date: {new Date().toString()}</p>
             }
