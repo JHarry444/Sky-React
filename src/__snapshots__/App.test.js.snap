@@ -7,21 +7,86 @@ exports[`App tests App matches snapshot 1`] = `
   <h1>
     LET'S LEARN REACT
   </h1>
+  <p
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+  >
+    THERE IS AN ERROR HERE!!!1111!!
+  </p>
+  <div>
+    <p>
+      Name: JH
+    </p>
+    <p>
+      Age: 29
+    </p>
+    <p>
+      Specialism: Software
+    </p>
+    <p>
+      Mon Apr 04 1994 01:00:00 GMT+0100 (British Summer Time)
+    </p>
+  </div>
+  <div>
+    <p>
+      Name: Cameron
+    </p>
+    <p>
+      Age: 30
+    </p>
+    <p>
+      Specialism: SDET
+    </p>
+    <p>
+      Mon Apr 04 1994 01:00:00 GMT+0100 (British Summer Time)
+    </p>
+  </div>
+  <div>
+    <p>
+      Name: Andy
+    </p>
+    <p>
+      Age: 20
+    </p>
+    <p>
+      Specialism: Software
+    </p>
+    <p>
+      Mon Apr 04 1994 01:00:00 GMT+0100 (British Summer Time)
+    </p>
+  </div>
   <p>
     This is a paragraph
   </p>
   <div>
     <p>
-      Name: 
-      JH
+      Name: JH
     </p>
     <p>
-      Age: 
-      29
+      Age: 29
     </p>
     <p>
-      Specialism: 
-      software
+      Specialism: weaponisation
+    </p>
+    <p>
+      Mon Apr 04 1994 01:00:00 GMT+0100 (British Summer Time)
+    </p>
+  </div>
+  <div>
+    <p>
+      Name: JH
+    </p>
+    <p>
+      Age: 29
+    </p>
+    <p>
+      Specialism: weaponisation
+    </p>
+    <p>
+      Mon Apr 04 1994 01:00:00 GMT+0100 (British Summer Time)
     </p>
   </div>
   <p>

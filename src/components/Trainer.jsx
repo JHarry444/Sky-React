@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import CreatedDate from "./CreatedDate";
 
 // const Trainer = (props) => {
 //     return (
@@ -20,9 +21,7 @@ const Trainer = ({name, age, specialism}) => {
             <p>{`Name: ${name}`}</p>
             <p>{`Age: ${age}`}</p>
             <p>{`Specialism: ${specialism}`}</p>
-            {
-                //<p>Date: {new Date().toString()}</p>
-            }
+            <CreatedDate/>
         </div>
     )
 

@@ -1,19 +1,28 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Trainer from './components/Trainer';
 import Conditional from './components/Conditional';
 import ClassBased from './components/ClassBased';
+import trainers from './data/trainers.json';
+import TruthyFalsy from './components/TruthyFalsy';
 
 function App() {
   const InnerComponent = () => <p>what up</p>;
   return (
     <div className='App'>
       <Header />
+      <TruthyFalsy error={true} />
+      <TruthyFalsy error={false} />
+      {
+        trainers.map(({ id, name, age, specialism }) => (
+          <Trainer key={id} name={name} age={age} specialism={specialism} />
+        )
+        )
+      }
       <p>This is a paragraph</p>
       <Trainer name="JH" age={29} specialism="weaponisation" />
       {Trainer({ name: "JH", age: 29, specialism: "weaponisation" })}
-      <Trainer />
       <InnerComponent />
       {InnerComponent()}
       <Conditional />

@@ -3,7 +3,13 @@ import App from './App';
 import { create } from 'react-test-renderer';
 import Trainer from './components/Trainer';
 
-const data = [];
+
+jest.mock("./components/CreatedDate", function () {
+  return function () {
+    return <p>{new Date("1994-04-04").toString()}</p>;
+  };
+});
+
 describe("App tests", () => {
 
   test('renders learn react link', () => {
@@ -17,7 +23,7 @@ describe("App tests", () => {
     expect(app.toJSON()).toMatchSnapshot();
   });
 
-  test.only('Component renders with props', () => {
+  test('Component renders with props', () => {
     const name = "JH";
     const age = 27;
     const specialism = "software";
