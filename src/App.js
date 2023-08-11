@@ -6,11 +6,15 @@ import Conditional from './components/Conditional';
 import ClassBased from './components/ClassBased';
 import trainers from './data/trainers.json';
 import TruthyFalsy from './components/TruthyFalsy';
+import Counter from './components/Counter';
+import Form from './components/Form';
 
 function App() {
   const InnerComponent = () => <p>what up</p>;
   return (
     <div className='App'>
+      <Form />
+      <Counter />
       <Header />
       <TruthyFalsy error={true} />
       <TruthyFalsy error={false} />

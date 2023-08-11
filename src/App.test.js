@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import { create } from 'react-test-renderer';
+import { act, create } from 'react-test-renderer';
 import Trainer from './components/Trainer';
-
+import HandlingChange from './components/HandlingChange';
 
 jest.mock("./components/CreatedDate", function () {
   return function () {
@@ -37,4 +37,20 @@ describe("App tests", () => {
     expect(paragraphs[1].children).toContain(`Age: ${age}`);
     expect(paragraphs[2].children).toContain(`Specialism: ${specialism}`);
   });
-})
+
+  test.only("test that the change is handled", () => {
+    const testRenderer = create(<HandlingChange />);
+    const testInstance = testRenderer.root;
+    const input = testInstance.findByType("input");
+    const event = {
+      target: {
+        value: "bloop"
+      }
+    };
+    act(() => {
+      input.props.onChange(event);
+    })
+
+    expect(input.props.value).toEqual("bloop");
+  });
+});
