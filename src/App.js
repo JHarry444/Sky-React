@@ -9,11 +9,21 @@ import TruthyFalsy from './components/TruthyFalsy';
 import Counter from './components/Counter';
 import Form from './components/Form';
 import Groceries from './components/inverse-data-flow/Groceries';
+import HedgehogContainer from './components/external-data/HedgehogContainer';
 
 function App() {
   const InnerComponent = () => <p>what up</p>;
   return (
     <div className='App'>
+      <HedgehogContainer />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Groceries />
       <br />
       <br />
