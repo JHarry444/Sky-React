@@ -8,11 +8,21 @@ import trainers from './data/trainers.json';
 import TruthyFalsy from './components/TruthyFalsy';
 import Counter from './components/Counter';
 import Form from './components/Form';
+import Groceries from './components/inverse-data-flow/Groceries';
 
 function App() {
   const InnerComponent = () => <p>what up</p>;
   return (
     <div className='App'>
+      <Groceries />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Form />
       <Counter />
       <Header />

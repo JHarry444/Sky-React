@@ -11,7 +11,7 @@ const Form = () => {
     return ( 
         <form>
             <label htmlFor="nameInput">Name:</label>
-            <input type="text" value={name} onChange={handleChange()}  name="name" id="nameInput" />
+            <input type="text" value={name} onChange={handleChange}  name="name" id="nameInput" />
             <br />
             <label htmlFor="ageInput">Age:</label>
             <input type="number" name="age" id="ageInput"  value={age} onChange={(e) => setAge(e.target.value)}/>
