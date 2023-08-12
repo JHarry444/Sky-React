@@ -9,9 +9,11 @@ const HedgehogForm = ({setter}) => {
     const handleSubmit = async function(event) {
         event.preventDefault();
         try {
-        await axios.post("http://localhost:8081/hedgehog/create", {
-            name, age, colour
-        });
+            // NODE_ENV is 'production' after npm build and 'development' with npm start
+            const URL = `http://${process.env.NODE_ENV === "production" ? "/api" : "localhost:8081"}/hedgehog/create`;
+            await axios.post(URL, {
+                name, age, colour
+            });
 
         await setter();
     } catch (err) {
