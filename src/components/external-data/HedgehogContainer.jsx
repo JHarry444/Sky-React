@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import HedgehogForm from "./HedgehogForm";
 import HedgehogList from "./HedgehogList";
 import axios from "axios";
-import {API_URL} from "../../data/consts.json";
 
 const HedgehogContainer = () => {
     const [listOfHedgehogs, setListOfHedgehogs] = useState([]);
