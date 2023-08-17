@@ -13,7 +13,7 @@ const HedgehogContainer = () => {
 
     const getHedgehogs = async () => {
         try {
-            const URL = `http://${process.env.NODE_ENV === "production" ? "api" : "localhost:8081"}/hedgehog/getAll`;
+            const URL = `${process.env.NODE_ENV === "production" ? "/api" : "http://localhost:8081"}/hedgehog/getAll`;
             const response = await axios.get(URL);
             setListOfHedgehogs(response.data);
         } catch (error) {
