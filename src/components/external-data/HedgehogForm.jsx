@@ -10,7 +10,7 @@ const HedgehogForm = ({setter}) => {
         event.preventDefault();
         try {
             // NODE_ENV is 'production' after npm build and 'development' with npm start
-            const URL = `http://${process.env.NODE_ENV === "production" ? "api" : "localhost:8081"}/hedgehog/create`;
+            const URL = `${process.env.NODE_ENV === "production" ? "/api" : "http://localhost:8081"}/hedgehog/create`;
             await axios.post(URL, {
                 name, age, colour
             });
